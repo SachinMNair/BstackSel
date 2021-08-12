@@ -39,11 +39,20 @@
   <profiles>
         <profile>
             <id>single</id>
-            
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
                             <includes>
                                 <include>com/selenium/Bstack/sPButtonChromeBstack.java</include>
                             </includes>
-                   </profile>         
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
     </profiles>
   
 </project>
