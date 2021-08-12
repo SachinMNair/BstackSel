@@ -35,5 +35,15 @@
         <version>3.13.0</version>
     </dependency>
   </dependencies>
+
+  <profiles>
+        <profile>
+            <id>single</id>
+            
+                            <includes>
+                                <include>com/selenium/Bstack/sPButtonChromeBstack.java</include>
+                            </includes>
+                   </profile>         
+    </profiles>
   
 </project>
